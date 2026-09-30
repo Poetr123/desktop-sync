@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.7.15] - 2026-09-24
+
+### Changed
+
+- Added workstation metadata to synchronization requests.
+- Improved runtime cleanup behavior.
+- Updated client version information.
+
 All notable changes to this project are documented in this file.
 
 ## [2.7.14] - 2026-09-21
