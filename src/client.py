@@ -46,7 +46,7 @@ class SyncClient:
             try:
                 return self._send(payload)
 
-            except OSError as exc:
+            except (OSError, TimeoutError) as exc:
                 logger.warning(
                     "Synchronization attempt %d failed: %s",
                     attempt,
