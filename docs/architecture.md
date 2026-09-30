@@ -62,3 +62,8 @@ The client stores a small amount of runtime state under the configured
 runtime directory.
 
 Runtime state should not be committed to the repository.
+## Runtime Directory Management
+
+Temporary synchronization data is stored outside the source tree.
+The cleanup utility can be used to remove stale runtime files without
+affecting application configuration or source code.
