@@ -18,5 +18,6 @@ print("version:", VERSION)
 print("environment:", config["application"]["environment"])
 print("sync:", "enabled" if config["sync"]["enabled"] else "disabled")
 print("endpoint:", config["endpoint"]["host"])
+print("configuration: valid")
 print("status: OK")
 PY
