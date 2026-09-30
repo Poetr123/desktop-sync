@@ -2,4 +2,9 @@ import logging
 
 
 def get_logger(name):
-    return logging.getLogger(name)
+    logger = logging.getLogger(name)
+
+    if not logger.handlers:
+        logger.setLevel(logging.INFO)
+
+    return logger
