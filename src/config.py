@@ -40,6 +40,14 @@ def validate_config(config):
     if not endpoint.get("port"):
         raise ValueError("Endpoint port is missing")
 
+    if not isinstance(endpoint["port"], int):
+        raise ValueError("Endpoint port must be an integer")
+
+    application = config["application"]
+
+    if not application.get("environment"):
+        raise ValueError("Application environment is missing")
+
     sync = config["sync"]
 
     if sync.get("interval_seconds", 0) <= 0:
