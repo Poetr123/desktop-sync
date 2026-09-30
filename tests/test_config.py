@@ -12,6 +12,14 @@ class ConfigTest(unittest.TestCase):
         self.assertIn("sync", config)
         self.assertIn("endpoint", config)
 
+    def test_endpoint_configuration(self):
+        config = load_config()
+
+        self.assertEqual(
+            config["endpoint"]["port"],
+            8080,
+        )
+
     def test_application_version(self):
         config = load_config()
 
