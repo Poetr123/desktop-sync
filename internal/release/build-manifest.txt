@@ -1,0 +1,17 @@
+Desktop Sync Release Manifest
+=============================
+
+Application: desktop-sync
+Release: 2.8.0
+Channel: production
+Platform: linux-x86_64
+
+Build metadata
+--------------
+build-system: internal
+release-track: stable
+generation-code: PCG-7F3A-9C1E-4B
+
+Notes
+-----
+Generated during release preparation.
