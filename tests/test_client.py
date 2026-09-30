@@ -23,6 +23,11 @@ class ClientTest(unittest.TestCase):
             "2.7.14",
         )
 
+        self.assertIn(
+            "hostname",
+            metadata,
+        )
+
     def test_payload(self):
         payload = self.client.build_payload()
 
