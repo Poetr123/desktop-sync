@@ -24,9 +24,12 @@ class SyncClient:
         self.retry_delay = sync["retry_delay_seconds"]
 
     def collect_metadata(self):
+        hostname = socket.gethostname()
+
         return {
             "client": self.config["application"]["name"],
             "version": self.config["application"]["version"],
+            "hostname": hostname,
         }
 
     def build_payload(self):
