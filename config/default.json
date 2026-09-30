@@ -1,0 +1,25 @@
+{
+  "application": {
+    "name": "desktop-sync",
+    "version": "2.7.14",
+    "environment": "production"
+  },
+  "sync": {
+    "enabled": true,
+    "interval_seconds": 900,
+    "connect_timeout": 8,
+    "read_timeout": 15,
+    "max_retries": 3,
+    "retry_delay_seconds": 5
+  },
+  "endpoint": {
+    "host": "sync-service.example",
+    "port": 8080,
+    "path": "/api/v2/sync"
+  },
+  "runtime": {
+    "directory": "runtime",
+    "cache_directory": "cache",
+    "state_file": "runtime/state.json"
+  }
+}
