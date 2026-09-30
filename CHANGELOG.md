@@ -4,6 +4,13 @@ All notable changes to this project are documented in this file.
 
 ## [2.7.14] - 2026-09-21
 
+### Maintenance
+
+- Improved configuration validation.
+- Updated health check output.
+- Expanded configuration tests.
+
+
 ### Changed
 
 - Updated synchronization client.
