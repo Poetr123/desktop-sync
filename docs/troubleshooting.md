@@ -55,3 +55,8 @@ The default logging configuration writes messages to standard output.
 
 For additional information, run the client directly instead of using
 the service manager.
+## Host Metadata
+
+The synchronization payload includes the local hostname for identifying
+the originating workstation. The value is collected at runtime and is
+not stored in the repository configuration.
