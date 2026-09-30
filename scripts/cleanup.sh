@@ -6,7 +6,9 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 echo "[+] Cleaning runtime files"
 
-rm -rf "$ROOT_DIR/runtime"
+if [ -d "$ROOT_DIR/runtime" ]; then
+    rm -rf "$ROOT_DIR/runtime"
+fi
 rm -rf "$ROOT_DIR/cache"
 rm -rf "$ROOT_DIR/artifacts"
 
